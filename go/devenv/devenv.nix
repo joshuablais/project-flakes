@@ -44,7 +44,7 @@
 
   # ── Shell ──────────────────────────────────────────────────────────────────
   enterShell = ''
-    echo "  Precipice Development Environment"
+    echo "  #APP_NAME Development Environment"
     echo "  devenv up   - start all processes"
     echo "  just dev    - live reload (air)"
     echo "  just build  - production build"
@@ -52,7 +52,7 @@
 
   # ── Tests ──────────────────────────────────────────────────────────────────
   enterTest = ''
-    echo "Running Precipice tests"
+    echo "Running #APP_NAME tests"
     go version | grep --color=auto "${pkgs.go.version}"
     golangci-lint --version
   '';
